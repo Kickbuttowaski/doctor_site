@@ -1,8 +1,8 @@
 {
-  "homepage": "https://Kickbuttowaski.github.io/doctor_site",
   "name": "doctor_site",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://Kickbuttowaski.github.io/doctor_site",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.32",
     "@fortawesome/free-solid-svg-icons": "^5.15.1",
