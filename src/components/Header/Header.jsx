@@ -3,7 +3,7 @@ import style from "./Header.module.css";
 import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhoneAlt, faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
-import logo from "../../utils/logo.png";
+import logo from "../../utils/logo.jpeg";
 
 const Header = () => {
   return (

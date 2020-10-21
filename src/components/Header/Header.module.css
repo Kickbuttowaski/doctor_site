@@ -90,7 +90,11 @@
 .nav-toggle:checked ~ nav {
   transform: scale(1, 1);
 }
-
+.logo {
+    grid-column: 2/3;
+    height: 7vh;
+    width: 170px;
+  }
 @media screen and (min-width: 800px) {
   .subcontainer1 {
     /* color: var(--primary); */
@@ -110,7 +114,7 @@
   }
   .logo {
     grid-column: 2/3;
-    height: 100px;
+    height: 7vh;
     width: 170px;
   }
   .subcontainer2 nav ul li a {
