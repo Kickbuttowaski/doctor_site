@@ -21,14 +21,14 @@ const AppContainer = () => {
           <Header />
         </div>
         <Route
-          path="/specialties/:specality"
+          path="/doctor_site/specialties/:specality"
           component={(props) => {
             return <SpecialDetail {...props} />;
           }}
         />
         <Route
           exact
-          path="/home"
+          path="/doctor_site/home"
           component={(props) => {
             return (
               <React.Fragment>
@@ -49,7 +49,7 @@ const AppContainer = () => {
           }}
         />
         <Route exact path="/">
-          <Redirect to="/home" />
+          <Redirect to="/doctor_site/home" />
         </Route>
       </div>
     </Router>
