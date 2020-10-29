@@ -1,29 +1,108 @@
-import React from "react";
+import React, { useState } from "react";
 import style from "./About.module.css";
 const About = () => {
+  const [payload, setPayload] = useState({
+    first_name: "",
+    last_name: "-",
+    email: "-",
+    phone: "",
+    notes: "-",
+    service: "1",
+  });
+  const handleUserInput = (key, value) => {
+    setPayload(Object.assign({}, payload, { [key]: value }));
+  };
+  const handleSubmit = () => {
+    fetch("https://api.sendgrid.com/v3/mail/send", {
+      method: "post",
+      mode: "cors",
+      headers: new Headers({
+        Authorization:
+          "Bearer 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",
+        "Content-Type": "application/json",
+      }),
+      body: JSON.stringify({
+        personalizations: [{ to: [{ email: "chottu64@gmail.com" }] }],
+        from: { email: "promods96@gmail.com" },
+        subject: "Appointment",
+        content: [{ type: "text/html", value: "<h1>HELLO FROM TESTING</h1>" }],
+      }),
+    })
+      .then((res) => {
+        console.log(res);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
   return (
     <div className={style.container}>
       <div className={style.form}>
         <h1>Fill your details</h1>
         <div className={style.field}>
           <label>First Name</label>
-          <input type="text" />
+          <input
+            type="text"
+            value={payload.first_name}
+            onChange={(e) => {
+              handleUserInput("first_name", e.currentTarget.value);
+            }}
+          />
         </div>
         <div className={style.field}>
           <label>Last Name</label>
-          <input type="text" />
+          <input
+            type="text"
+            value={payload.last_name}
+            onChange={(e) => {
+              handleUserInput("last_name", e.currentTarget.value);
+            }}
+          />
         </div>
         <div className={style.field}>
           <label>Email</label>
-          <input type="text" />
+          <input
+            type="text"
+            value={payload.email}
+            onChange={(e) => {
+              handleUserInput("email", e.currentTarget.value);
+            }}
+          />
         </div>
         <div className={style.field}>
           <label>Phone</label>
-          <input type="text" />
+          <input
+            type="text"
+            value={payload.phone}
+            onChange={(e) => {
+              handleUserInput("phone", e.currentTarget.value);
+            }}
+          />
         </div>
         <div className={style.field}>
           <label>Additional Info</label>
-          <input type="text" />
+          <input
+            type="text"
+            value={payload.notes}
+            onChange={(e) => {
+              handleUserInput("notes", e.currentTarget.value);
+            }}
+          />
+        </div>
+        <div className={style.field}>
+          <label>Service</label>
+          <select
+            onChange={(e) => {
+              handleUserInput("service", e.currentTarget.value);
+            }}
+            value={payload.service}
+          >
+            <option value="1">Consulting</option>
+            <option value="2">Home Service</option>
+          </select>
+        </div>
+        <div className={style.button} onClick={handleSubmit}>
+          Book Appointment
         </div>
       </div>
       <div>
