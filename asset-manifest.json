@@ -1,24 +1,35 @@
 {
   "files": {
-    "main.css": "/doctor_site/static/css/main.b67e172e.chunk.css",
-    "main.js": "/doctor_site/static/js/main.06a3275f.chunk.js",
-    "main.js.map": "/doctor_site/static/js/main.06a3275f.chunk.js.map",
+    "main.css": "/doctor_site/static/css/main.6f6f2126.chunk.css",
+    "main.js": "/doctor_site/static/js/main.a3e50d93.chunk.js",
+    "main.js.map": "/doctor_site/static/js/main.a3e50d93.chunk.js.map",
     "runtime-main.js": "/doctor_site/static/js/runtime-main.1ed1cd46.js",
     "runtime-main.js.map": "/doctor_site/static/js/runtime-main.1ed1cd46.js.map",
-    "static/js/2.449fdbb0.chunk.js": "/doctor_site/static/js/2.449fdbb0.chunk.js",
-    "static/js/2.449fdbb0.chunk.js.map": "/doctor_site/static/js/2.449fdbb0.chunk.js.map",
+    "static/js/2.4bcad269.chunk.js": "/doctor_site/static/js/2.4bcad269.chunk.js",
+    "static/js/2.4bcad269.chunk.js.map": "/doctor_site/static/js/2.4bcad269.chunk.js.map",
     "index.html": "/doctor_site/index.html",
-    "precache-manifest.e64ddcad0fd6d08ded8ddeb82353f86c.js": "/doctor_site/precache-manifest.e64ddcad0fd6d08ded8ddeb82353f86c.js",
+    "precache-manifest.b57b6b8d90051d2336840c9438da8c42.js": "/doctor_site/precache-manifest.b57b6b8d90051d2336840c9438da8c42.js",
     "service-worker.js": "/doctor_site/service-worker.js",
-    "static/css/main.b67e172e.chunk.css.map": "/doctor_site/static/css/main.b67e172e.chunk.css.map",
-    "static/js/2.449fdbb0.chunk.js.LICENSE.txt": "/doctor_site/static/js/2.449fdbb0.chunk.js.LICENSE.txt",
+    "static/css/main.6f6f2126.chunk.css.map": "/doctor_site/static/css/main.6f6f2126.chunk.css.map",
+    "static/js/2.4bcad269.chunk.js.LICENSE.txt": "/doctor_site/static/js/2.4bcad269.chunk.js.LICENSE.txt",
+    "static/media/005-orthopedist.svg": "/doctor_site/static/media/005-orthopedist.c14e5339.svg",
+    "static/media/006-therapist.svg": "/doctor_site/static/media/006-therapist.13b86eb9.svg",
+    "static/media/009-psychiatrist.svg": "/doctor_site/static/media/009-psychiatrist.6f4a7e93.svg",
+    "static/media/015-gynecologist.svg": "/doctor_site/static/media/015-gynecologist.ae420de9.svg",
+    "static/media/018-pediatrician.svg": "/doctor_site/static/media/018-pediatrician.95c49910.svg",
+    "static/media/021-oncologist.svg": "/doctor_site/static/media/021-oncologist.52c5f56b.svg",
+    "static/media/029-nurse.svg": "/doctor_site/static/media/029-nurse.73079c62.svg",
+    "static/media/038-nurse.svg": "/doctor_site/static/media/038-nurse.02a03d94.svg",
+    "static/media/039-gynecologist.svg": "/doctor_site/static/media/039-gynecologist.a4b9d7a5.svg",
+    "static/media/049-surgeon.svg": "/doctor_site/static/media/049-surgeon.6f29fdc1.svg",
+    "static/media/cardio.svg": "/doctor_site/static/media/cardio.3e7a1c3b.svg",
     "static/media/logo.jpeg": "/doctor_site/static/media/logo.a1799cc1.jpeg",
     "static/media/mainImg.jpg": "/doctor_site/static/media/mainImg.5439eb7c.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.1ed1cd46.js",
-    "static/js/2.449fdbb0.chunk.js",
-    "static/css/main.b67e172e.chunk.css",
-    "static/js/main.06a3275f.chunk.js"
+    "static/js/2.4bcad269.chunk.js",
+    "static/css/main.6f6f2126.chunk.css",
+    "static/js/main.a3e50d93.chunk.js"
   ]
 }
