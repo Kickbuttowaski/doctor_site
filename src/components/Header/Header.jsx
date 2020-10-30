@@ -38,13 +38,13 @@ const Header = () => {
             <div style={{ width: "200px" }}></div>
             <ul>
               <li>
-                <a href="/home#home">Home</a>
+                <a href="/doctor_site/home#home">Home</a>
               </li>
               <li>
-                <a href="/home#facility">Facilities</a>
+                <a href="/doctor_site/home#facility">Facilities</a>
               </li>
               <li>
-                <a href="/home#about">About us</a>
+                <a href="/doctor_site/home#about">About us</a>
               </li>
             </ul>
           </nav>

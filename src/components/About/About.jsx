@@ -15,7 +15,6 @@ const About = () => {
   const handleSubmit = () => {
     fetch("https://api.sendgrid.com/v3/mail/send", {
       method: "post",
-      mode: "cors",
       headers: new Headers({
         Authorization:
           "Bearer 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",
@@ -25,7 +24,7 @@ const About = () => {
         personalizations: [{ to: [{ email: "chottu64@gmail.com" }] }],
         from: { email: "promods96@gmail.com" },
         subject: "Appointment",
-        content: [{ type: "text/html", value: "<h1>HELLO FROM TESTING</h1>" }],
+        content: [{ type: "text/plain", value: "hello abc" }],
       }),
     })
       .then((res) => {
