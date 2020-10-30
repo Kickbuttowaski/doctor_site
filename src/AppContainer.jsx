@@ -15,20 +15,20 @@ import Special from "./components/Special/Special";
 import SpecialDetail from "./components/SpecialDetail/SpecialDetail";
 const AppContainer = () => {
   return (
-    <Router path={process.env.PUBLIC_URL + '/'}>
+    <Router basename={process.env.PUBLIC_URL}>
       <div>
         <div className={style.container}>
           <Header />
         </div>
         <Route
-          path="/doctor_site/specialties/:specality"
+          path="/specialties/:specality"
           component={(props) => {
             return <SpecialDetail {...props} />;
           }}
         />
         <Route
           exact
-          path="/doctor_site/home"
+          path="/home"
           component={(props) => {
             return (
               <React.Fragment>
