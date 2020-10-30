@@ -1,6 +1,6 @@
 import React from "react";
 import {
-  HashRouter as Router,
+  BrowserRouter as Router,
   Link,
   Route,
   Switch,
@@ -49,7 +49,7 @@ const AppContainer = () => {
           }}
         />
         <Route exact path="/">
-          <Redirect to="/doctor_site/home" />
+          <Redirect to="/home" />
         </Route>
       </div>
     </Router>
