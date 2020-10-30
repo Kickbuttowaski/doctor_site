@@ -15,7 +15,7 @@ import Special from "./components/Special/Special";
 import SpecialDetail from "./components/SpecialDetail/SpecialDetail";
 const AppContainer = () => {
   return (
-    <Router>
+    <Router path={process.env.PUBLIC_URL + '/'}>
       <div>
         <div className={style.container}>
           <Header />
