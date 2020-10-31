@@ -13,19 +13,8 @@ const About = () => {
     setPayload(Object.assign({}, payload, { [key]: value }));
   };
   const handleSubmit = () => {
-    fetch("https://api.sendgrid.com/v3/mail/send", {
+    fetch("/sendmail", {
       method: "post",
-      headers: new Headers({
-        Authorization:
-          "Bearer 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",
-        "Content-Type": "application/json",
-      }),
-      body: JSON.stringify({
-        personalizations: [{ to: [{ email: "chottu64@gmail.com" }] }],
-        from: { email: "promods96@gmail.com" },
-        subject: "Appointment",
-        content: [{ type: "text/plain", value: "hello abc" }],
-      }),
     })
       .then((res) => {
         console.log(res);
